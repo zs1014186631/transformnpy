@@ -5,7 +5,7 @@ from PIL import Image
 import os
 
 Datapath = r'D:\pycharm\11111\*.jpg'
-input_raw_data = np.zeros((1400, 128, 128, 3), dtype='float32')
+input_raw_data = np.zeros((1400, 128, 128, 3), dtype='float32') #(1400, 1, 64, 64)
 i = 0
 for imageFile in glob.glob(Datapath):
     # 打开图像并转化为数字矩阵(240x240x3)
